@@ -1,7 +1,8 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require("../extensions/index.js");
 
 /**
  * Given a string, return its encoding version.
+ * Если задана строка, верните версию ее кодировки.
  *
  * @param {String} str
  * @return {String}
@@ -11,10 +12,10 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function encodeLine(/* str */) {
-  throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError("Not implemented");
   // remove line with error and write your code here
 }
 
 module.exports = {
-  encodeLine
+  encodeLine,
 };

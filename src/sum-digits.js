@@ -1,8 +1,10 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require("../extensions/index.js");
 
 /**
  * Given a number, replace this number with
  * the sum of its digits until we get to a one digit number.
+ *Задано число, замените его на
+ * сумму его цифр, пока не получится однозначное число.
  *
  * @param {Number} n
  * @return {Number}
@@ -13,10 +15,10 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function getSumOfDigits(/* n */) {
-  throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError("Not implemented");
   // remove line with error and write your code here
 }
 
 module.exports = {
-  getSumOfDigits
+  getSumOfDigits,
 };

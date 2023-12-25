@@ -1,4 +1,4 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const { NotImplementedError } = require("../extensions/index.js");
 
 /**
  * There's a list of file, since two files cannot have equal names,
@@ -6,6 +6,11 @@ const { NotImplementedError } = require('../extensions/index.js');
  * where k is the smallest integer such that the found name is not used yet.
  *
  * Return an array of names that will be given to the files.
+ *Имеется список файлов, поскольку два файла не могут иметь одинаковые имена,
+ * тот, который придет позже, будет иметь суффикс (k),
+ * где k - наименьшее целое число, такое, что найденное имя еще не используется.
+ *
+ * Возвращает массив имен, которые будут присвоены файлам.
  *
  * @param {Array} names
  * @return {Array}
@@ -16,10 +21,10 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function renameFiles(/* names */) {
-  throw new NotImplementedError('Not implemented');
+  throw new NotImplementedError("Not implemented");
   // remove line with error and write your code here
 }
 
 module.exports = {
-  renameFiles
+  renameFiles,
 };
