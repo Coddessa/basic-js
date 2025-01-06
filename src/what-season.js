@@ -13,8 +13,36 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function getSeason(date) {
-  throw new NotImplementedError("Not implemented");
-  // remove line with error and write your code here
+  
+  if (date === undefined) {
+    throw new Error('Invalid date!');
+  }
+
+ 
+  if (!(date instanceof Date) || isNaN(date.getTime())) {
+    throw new Error('Invalid date!');
+  }
+
+  
+  const seasonMapping = {
+    winter: [11, 0, 1], 
+    spring: [2, 3, 4],   
+    summer: [5, 6, 7],   
+    autumn: [8, 9, 10],  
+  };
+
+
+  const currentMonth = date.getMonth();
+
+ 
+  for (const season in seasonMapping) {
+    if (seasonMapping[season].includes(currentMonth)) {
+      return season;
+    }
+  }
+
+
+  throw new Error('Invalid date!');
 }
 
 module.exports = {

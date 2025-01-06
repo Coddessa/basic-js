@@ -25,7 +25,6 @@ function getMatrixElementsSum(matrix) {
   for (let i = 0; i < matrix.length; i += 1) {
     for (let j = 0; j < matrix[0].length; j += 1) {
       !colmn0.has(j) ? (sum += matrix[i][j]) : null;
-
       matrix[i][j] === 0 ? colmn0.add(j) : null;
     }
   }
